@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="validate()">
+        <label for="username"> Enter User Name</label>
+        <input type="text" id="user">
+        <p></p>
+        <label for="em"> Enter Email ID</label>
+        <input type="email" id="email">
+        <p></p>
+        <label for="psw"> Enter Password</label>
+        <input type="password"  name="pswd"  id="pwd">
+        <p></p>
+        <input type="submit"  name="" id="">
+        <p></p>
+    </form>
+    <script>
+
+        function validate() {
+            var myUser = document.getElementById("user").value;
+           console.log(user);
+
+
+           var myEmail = document.getElementById('email').value;
+
+           var myPwd = document.getElementById('pwd');
+
+           if(myUser.length < 7){
+               alert("User Name should be more then 8 characters")
+           }
+
+           if(myEmail.indexOf('.')==-1){
+               alert("this is not a valid email")
+           }
+        }
+    </script>
+</body>
+</html>

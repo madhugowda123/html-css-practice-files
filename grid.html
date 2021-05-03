@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+        }
+        section {
+            display: grid;
+             grid-template-columns: 1fr 2fr 1fr;
+            /* grid-gap: 5px; */
+        }
+        section div {
+            border: 0px;
+        }
+         #div1 { 
+            grid-column: 1/2;
+            grid-row: 1/5;
+            background-color: white;
+        }
+        #div2 {  
+              grid-column: 2/4;
+              grid-row: 1/3; 
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="./right1.png" alt="rightSymbol" style="width: 0.7cm;height: 0.7cm;"><b>&nbsp;Todo List</b></h1>
+    <section>
+        <div id="div1">
+
+    <p><img src="./inbox.png" alt="rightSymbol" style= "width: 0.4cm;height: 0.4cm;"><i>&nbsp;Inbox</i></p>
+    <p><img src="./today1.png" alt="rightSymbol" style= "width: 0.4cm;height: 0.4cm;"><i>&nbsp;Today</i></p>
+    <p><img src="./week.png" alt="rightSymbol" style= "width: 0.4cm;height: 0.4cm;"><i>&nbsp;Week</i></p>
+
+        
+                <h3>Projects</h3>
+            </div> 
+        <div id="div2"></div>
+        <!-- <div id="div3"><b>DIV3</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div> -->
+        <!-- <div><b>DIV4</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV5</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV6</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV7</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV8</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV9</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV10</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV11</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div>
+        <div><b>DIV12</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores natus provident quaerat vel eligendi necessitatibus quis minima ad praesentium!</div> -->
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+</body>
+</html>

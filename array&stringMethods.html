@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    console.log("========string=======");
+
+    var s="Javascript Session";
+    var x=s.toLowerCase();
+    var x=s.toUpperCase();
+
+
+    var x=s.indexOf('J',4);
+    var x=s.charAt(3);
+    var x=s.replace('a','b');
+    var x=s.replaceAll('a','b');
+    var x=s.replace('Session','class');
+   
+    var x=s.concat(" hello"," World");
+   
+    var x="my ".concat(" name"," is");
+    var x=s.substr(0,6);
+    console.log(x);
+    var name="                madhu gowda            ";
+    console.log(name);
+    var x=name.trim();
+   
+    var x=s.includes('v',2)
+    console.log(x);
+
+
+    // ====================template string====
+
+    // let s="I am learning 'JavaScript'";
+    // console.log(s);
+    // let s1='I am learning "JavaScript"';
+    // console.log(s1);
+
+    let myString=`I am learning "JavaScript" as a part of 'ELF' program`;
+    console.log(myString);
+    let lang="JavaScript";
+    let prog='ELF';
+    console.log("I am learning " +lang+ "as a part of the" +prog+ "program");
+    
+    console.log(`I am learning  ${lang} part of the ${prog}`);
+
+    let arr=["01","02","03","04"]
+    let arr1=[93,84,78,94];
+   for(let i=0;i<arr.length;i++){
+       console.log(`roll num ${arr[i]} marks of madhu is ${arr1[i]} in bca`);
+   }
+
+    
+</script>    
+</body>
+</html>

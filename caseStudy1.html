@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caseStudy1</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            font-size: 1cm;
+        }
+        section {
+            display: grid;
+             grid-template-columns: 1fr 2fr 1fr;
+            /* grid-gap: 5px; */
+        }
+        section div {
+            border: 0px;
+        }
+         #div1 { 
+            grid-column: 1/2;
+            grid-row: 1/5;
+            background-color: rgb(223, 221, 221);
+        }
+        #div2 {  
+              grid-column: 2/4;
+              grid-row: 1/3; 
+              background-color: rgb(224, 180, 224);
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="./right1.png" alt="rightSymbol" style="width: 1cm;height: 1cm;"><b>&nbsp;Todo List</b></h1>
+    <section>
+        <div id="div1"><br>
+
+    <p>&nbsp;<img src="./inbox.png" alt="inboxIcon" style= "width: 0.4cm;height: 0.4cm;"><i>&nbsp;Inbox</i></p>
+    <p>&nbsp;<img src="./today1.png" alt="todayIcon" style= "width: 0.4cm;height: 0.4cm;"><i>&nbsp;Today</i></p>
+    <p>&nbsp;<img src="./week.png" alt="weekIcon" style= "width: 0.4cm;height: 0.4cm;"><i>&nbsp;This week</i></p>
+
+                <h3>&nbsp;Projects</h3>
+                <form class="container m-1 ">
+                <input type="text" id="idea"><P></P>
+                <input type="button" id="add" value="Add">
+                <input type="button" id="cancel" value="cancel">
+            
+                </form>
+                 <script>
+                    document.getElementById("add").onclick=function myFuction()
+                    {
+                     var node=document.createElement("Li");
+                     var text=document.getElementById("idea").value;
+                     var textnode=document.createTextNode(text);
+                     node.appendChild(textnode);
+                     document.getElementById("list").appendChild(node);
+                    }
+                    </script>
+                    <ul id="list"></ul>  
+                </div>     
+        <div id="div2">
+             <!-- <input type="text" id="idea"> <br>
+                <input type="button" id="add" value="Add">
+                <input type="button" id="remove" value="cancel"> -->
+            
+        </div>
+</section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+</body>
+</html>

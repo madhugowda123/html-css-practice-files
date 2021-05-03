@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var person={
+            name: "Sudha",
+            age: 50
+        }
+        var person1={
+            name: "Sursh",
+            age: 55
+        }
+        var person2={
+            name: "Madhu",
+            age: 22
+        }
+       
+       
+        var json_data=JSON.stringify(person);
+        console.log(json_data);
+        var js_data=JSON.parse(json_data);
+        console.log(js_data);
+        
+        var json_data1=JSON.stringify(person1);
+        var json_data2=JSON.stringify(person2);
+
+//====================LocalStroage====================
+
+        localStorage.setItem("first",json_data);
+        localStorage.setItem("second",json_data1);
+        localStorage.setItem("third",json_data2);
+
+        localStorage.removeItem("first");
+
+        
+
+        console.log(localStorage.length);
+        console.log(localStorage.key(0));
+        
+        localStorage.clear();
+
+//================SessionStroage=============
+
+sessionStorage.setItem("first",json_data);
+sessionStorage.setItem("second",json_data);
+sessionStorage.setItem("third",json_data);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .Class1{
+        color: red;
+    }
+    .Class2{
+        color: blue;
+    }
+</style>
+</head>
+<body>
+    <!-- <h1 id="h1id">FIRST HEADER TAG</h1>
+    <div id="myDiv">
+    <p class="pClass"> Paragraph with pClass -1</p>
+    <p class="pClass"> Paragraph with pClass -2</p>
+    <p class="pClass"> Paragraph with pClass -3</p>
+    </div>
+    <p id="pID">this paragraph tag is with pID</p>
+<div id="divID">
+    <h1>Second Header tag</h1>
+    <h3>This is a h3 tag</h3>
+    <p>This paragraph is inside div tag with id =divID</p>
+</div>
+<p name="sample"> This is p tag with name sample</p>
+<h4 name="sample">this is h4 tag with name sample</h4>
+<button onclick="getID()">getID</button>
+<p></p>
+<button onclick="buttonClass()">buttonClass</button>
+<p></p>
+<button onclick="tagButton()">TagButton</button>
+<p></p>
+<button onclick="buttonName()">buttonName</button>
+<p></p> -->
+<ul id="myul">
+    <li>java</li>
+    <li>J2EE</li>
+    <li>python</li>
+    <li>HTML</li>
+</ul>
+<button onclick="add()">Add Style</button>
+<p></p>
+<button onclick="remove()">Remove Style</button>
+<script>
+      var x=document.getElementById('myul');
+    var l1=document.createElement("li");
+    l1.innerHTML="CSS";
+    x.appendChild(l1);
+    console.log(x.chidren);
+
+    var l2=document.createElement("li");
+    l2.innerHTML='bootstrap';
+    x.insertBefore(l2, x.childNodes[3]);
+
+    
+    var l3=document.createElement("li");
+    l3.innerHTML='sql';
+    x.insertBefore(l3, x.childNodes[4]);
+
+    
+    var l4=document.createElement("li");
+    l4.innerHTML='javascript';
+    x.insertBefore(l4, x.childNodes[2]);
+
+    x.removeChild(x.children[2]);
+    var y=document.getElementById('demo');
+    function add() {
+        x.classList.add('Class1');
+        x.classList.add('Class2')
+    }
+    function remove() {
+        x.classList.remove('Class2')
+    }
+
+  //  function getID(){
+
+//         x.style.color="red";
+//         x.style.backgroundColor="yellow";
+//     }
+//     function buttonClass() {
+//         var x = document.getElementsByClassName("pClass");
+//         console.log(x);
+//         for (var i = 0; i < x.length; i++){
+//         x[i].style.color="green";
+//         x[i].style.backgroundColor="grey";
+//     }
+//     }
+// function tagButton() {
+//         var x = document.getElementsByTagName("h3");
+//         console.log(x);
+//         for (var i = 0; i < x.length; i++){
+//         x[i].style.color="purple";
+//         x[i].style.backgroundColor="wheat";
+//     }
+// }
+//     function buttonName() {
+//         var x = document.getElementsByName("sample");
+//         console.log(x);
+//         for (var i = 0; i < x.length; i++){
+//         x[i].style.color="black";
+//         x[i].style.backgroundColor="powderblue";
+//     }
+// }
+
+
+// var x= document.getElementById("divID");
+//         console.log(x);
+//         console.log(x.childNodes);
+//         console.log(x.childNodes[0]);
+//         console.log(x.childNodes[1]);
+//         console.log(x.children);
+//         console.log(x.firstChild);
+//         console.log(x.firstElementChild);
+//         console.log(x.lastChild);
+//         console.log(x.lastElementChild);
+//         console.log(x.firstChild.nextSibling);
+//         console.log(x.children[1]);
+
+
+</script>
+</body>
+</html>

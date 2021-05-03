@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment on css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+             background-color: wheat;
+            /* background-image: url("./image3.png"); */
+            margin: 2cm;
+       }
+        h1 {
+            color: rgb(56, 30, 56);
+            font-size: 1cm;
+            background-color: lightcoral;
+            text-align: center;
+        }
+        #navBar {
+            background-color: wheat;
+            height: 50px;
+            padding: 10px;
+        }
+        #navBar ul{
+            overflow: auto;
+        }
+        #navBar li{
+            background-color: wheat;
+            color: black;
+            float: left;
+            list-style: none;
+        }
+        #navBar a {
+            text-decoration: none;
+            background-color: wheat;
+            padding: 12px 12px;
+            margin: 3px;
+        }
+        #navBar a:hover{
+            color: black;
+            background-color: chartreuse;
+        }
+        #image{
+            float: left;
+            width: 50%;
+        }
+        #para{
+            float: right;
+            width: 40%;
+        }
+        #image1{
+            float: right;
+            width: 50%;
+        } 
+        #para1{
+            float: left;
+            width: 40%;
+        }
+        section{
+            display: grid;
+            grid-gap: 5px;
+        }
+        section div {
+            border:3px solid black ;
+        }  
+        #div1{
+            grid-column: 1/3;
+        }
+        #div2{
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+        #div3{
+            grid-column: 1/3;
+        }
+        #footer{
+            background-color: coral;
+            color: darkblue;
+            font-size: 1cm;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>TESTYANTRA SOFTWARE SOLUTION PVT LTD </h1>
+    <nav id="navBar">
+        <ul>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">INDUSTRIES</a></li>
+            <li><a href="#">KNOWLEDGE BASE</a></li>
+            <li><a href="#">DIGITAL OFFERING</a></li>
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">GLOBAL PRESENCE</a></li>
+            <div id="searchBox">
+                <input type="search" placeholder="search.">
+            </div>
+
+        </ul>
+    </nav>
+    <br>
+   <div>
+       <p id="para">
+        Mission: The objective of Test Yantra is to become most customer-centric company in the world and become a premier provider of software testing services, by being cost efficient, reliable, flexible and adding value by using our mastered art – software testing.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex amet officiis laudantium facere dolore, officia adipisci suscipit, quaerat itaque corrupti accusamus distinctio a corporis aut quibusdam excepturi minus fuga vero deleniti deserunt magnam mollitia. Facilis ducimus nihil placeat obcaecati, maxime omnis? Impedit unde et quam, nulla qui molestias, tempora quisquam perferendis similique sequi ratione commodi asperiores, corporis eaque placeat ex labore natus nostrum. Beatae delectus modi dolores debitis velit perferendis recusandae libero at cupiditate earum a quasi veniam sit blanditiis nobis provident quos aliquid sint atque, nemo totam. Corporis delectus ex cum mollitia quidem, iure inventore aperiam ratione tempor Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni magnam eius sequi aut, pariatur nemo adipisci quo distinctio minima cum ea, eos laboriosam? Atque repudiandae corrupti adipisci nesciunt dolorum? inctio facere quae necessitatibus quia. Doloremque cupiditate qui, ullam odio, voluptatem debitis ipsam error, similique explicabo sequi aliquam corrupti dolorem officiis omnis exercitationem porro ipsum ad nesciunt. Ad sunt vel repudiandae eum dolores harum tempore labore fuga cum repellendus, est, ipsam veritatis? Voluptas, magni nihil repudiandae deleniti a fuga? Est inventore cum fugiat qui ducimus, recusandae perferendis veniam nulla. Suscipit, at ab corrupti earum nisi dolorum ipsam dolores odit nihil vero accusantium mollitia. ram    
+    </p>
+       <img src="./image1.jpg" alt="" id="image" style="height: 40%; width: 40%;">
+        <p id="para1">
+        Mission: The objective of Test Yantra is to become most customer-centric company in the world and become a premier provider of software testing services, by being cost efficient, reliable, flexible and adding value by using our mastered art – software testing.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex amet officiis laudantium facere dolore, officia adipisci suscipit, quaerat itaque corrupti accusamus distinctio a corporis aut quibusdam excepturi minus fuga vero deleniti deserunt magnam mollitia. Facilis ducimus nihil placeat obcaecati, maxime omnis? Impedit unde et quam, nulla qui molestias, tempora quisquam perferendis similique sequi ratione commodi asperiores, corporis eaque placeat ex labore natus nostrum. Beatae delectus modi dolores debitis velit perferendis recusandae libero at cupiditate earum a quasi veniam sit blanditiis nobis provident quos aliquid sint atque, nemo totam. Corporis delectus ex cum mollitia quidem, iure inventore aperiam ratione temporibus.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, porro perspiciatis. Similique earum distinctio facere quae necessitatibus quia. Doloremque cupiditate qui, ullam odio, voluptatem debitis ipsam error, similique explicabo sequi aliquam corrupti dolorem officiis omnis exercitationem porro ipsum ad nesciunt. Ad sunt vel repudiandae eum dolores harum tempore labore fuga cum repellendus, est, ipsam veritatis? Voluptas, magni nihil repudiandae deleniti a fuga? Est inventore cum fugiat qui ducimus, recusandae perferendis veniam nulla. Suscipit, at ab corrupti earum nisi dolorum ipsam dolores odit nihil vero accusantium mollitia. ram    
+    </p> 
+        <img src="./image2.jpg" alt="" id="image1" style="height: 40%; width: 40%;">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div id="div1"><b>DIV1:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni aut architecto officiis, cum dolor minima sint nostrum quo quia soluta nulla, voluptates optio quos cupiditate animi distinctio illum ex voluptatum rem, quidem expedita aliquam? Quod fugiat quibusdam minus impedit est ipsum fuga praesentium in maiores. Iure repellat provident dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repudiandae, architecto ea exercitationem a, cupiditate incidunt ducimus quaerat excepturi, atque delectus tempora amet magnam libero explicabo laboriosam dolore! Voluptatibus, ipsum. Lorem Nihil sit numquam quae aperiam, assumenda, corrupti obcaecati impedit provident sapiente aliquid eaque deserunt, libero dicta perferendis optio. Beatae possimus voluptatum sapiente.</div>
+        <div id="div2"><b>DIV2:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias iste minus earum? Modi sequi aliquid optio facilis cupiditate ut totam sed, illum ipsa placeat corporis nobis neque cum ullam ratione, reiciendis quasi quos delectus illo dicta rerum odio consequuntur eligendi. Consequuntur sapiente, nulla eum numquam soluta illum! Dignissimos, corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quidem maiores amet assumenda, labore quos accusamus voluptas nesciunt. Mollitia repellendus deleniti odit ducimus placeat illum repellat ab voluptatum alias expedita? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est veniam ipsa neque deserunt asperiores? Commodi natus laborum iste ut delectus, minus porro! Expedita consequuntur, quo qui dolor ipsa rem voluptatibus!</div>
+        <div id="div3"><b>DIV3:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in quas excepturi consequatur pariatur dolorum voluptatum repellendus velit a nam distinctio, ad, atque autem est harum ipsa. Libero, quibusdam enim. Aliquid magni distinctio ducimus aut placeat cum unde recusandae maxime quis provident, modi optio officia nam nulla. Quasi, sed amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, nobis alias corrupti velit earum ab odit, blanditiis deserunt quo ad nostrum harum cupiditate rem cum sapiente odio iusto eaque impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum alias, totam libero, adipisci accusantium voluptatibus illum exercitationem tempora odio modi officia dignissimos autem itaque architecto officiis fuga rem eveniet iste? </div>
+    </section>
+    <br><br>
+    <div id="footer">THANKS YOU FOR VISITING THIS PAGE</div>
+</body>
+</html>

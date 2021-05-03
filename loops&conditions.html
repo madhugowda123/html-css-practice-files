@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // &&-AND ||-OR; !
+        var a=10;
+         if(a===10){
+         console.log("the number is 10");
+        }else{
+            console.log("the number is not 10");
+        }
+        const number = parseInt(prompt("Enter a number: "));
+
+// check if number is greater than 0
+if (a > 0) {
+    console.log("The number is positive");
+}
+
+// check if number is 0
+else if (a == 0) {
+  console.log("The number is zero");
+}
+
+// if number is less than 0
+else {
+     console.log("The number is negative");
+}
+// for foin forof
+var arr=[2,7,23,29,76];
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+console.log("====for of loop===attr");
+for(var i of arr){
+    console.log(i);
+}
+var myArr=[2,34,5,,5,,56];
+console.log(myArr);
+console.log(myArr.length);
+console.log(myArr);
+myArr['index']=100;
+console.log(myArr);
+console.log(myArr['index']);
+console.log(myArr.length);   
+console.log("==for loop===");
+var arr1=[2,34,5,,5,,56];
+for( var i=0;i<arr1.length;i++){
+    console.log(i);
+    console.log(arr1[i]);
+}
+console.log("for of loop");
+for(var i of arr1){
+    console.log(i);
+}
+console.log("for in loop");
+for(var i in arr1){
+    console.log(i);
+    console.log(arr1[i]);
+}
+while(a>0){
+    console.log(a);
+    a--;
+}
+// do while
+var a=5;
+do{
+    console.log(a);
+    a--;
+}while(a>0);
+var ar=[12,14,16,18,20]
+console.log("for of");
+for(var i of ar){
+    console.log(i);
+}
+var ar=[12,14,16,18,20];
+for(i of ar){
+    if(i % 2 !=0)
+    {
+        console.log(i);
+    }
+}
+    </script>
+</body>
+</html>

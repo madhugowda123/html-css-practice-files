@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexBox</title>
+    <style>
+        section {
+            display: flex;
+             /* flex-direction: column;  */
+            /* flex-direction: column-reverse; */
+             flex-direction: row; 
+        
+        }
+        .divClass {
+            border: black solid 2px;
+            background-color: cadetblue;
+            padding: 3px 3px;
+        }
+        #div1 {
+            color: darkblue;
+            background-color: darkkhaki;
+            flex-direction: row;
+        }
+        #div2 {
+            color: darkred;
+            background-color: darkturquoise;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="divClass" id="div1">Div1:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi perspiciatis earum nobis
+             eum ullam quisquam officia voluptas fugit! Accusantium, distinctio.</div>
+        <div class="divClass" id="div2">Div2:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi perspiciatis earum nobis
+            eum ullam quisquam officia voluptas fugit! Accusantium, distinctio.</div>
+        <div class="divClass" id="div3">Div3:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi perspiciatis earum nobis
+            eum ullam quisquam officia voluptas fugit! Accusantium, distinctio.</div>
+    </section>
+</body>
+</html>

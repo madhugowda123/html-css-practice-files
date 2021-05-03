@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* --element selectors-- */
+body{
+    /* margin: 3cm; */
+    /* background-image: url(); */
+}
+p
+{
+    color: red;
+    background-color: wheat;
+
+}
+div{
+    color: tomato;
+    background-color: rgb(56,218,24);
+}
+
+h1{
+    color: red;
+}
+/* class selectors */
+.myClass{
+    color: purple;
+    border-color: black;
+    border-width: 3px;
+    border-style: ridge;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    margin: 30px;
+    
+}
+/* id selector */
+#myID{
+    color: blue;
+    background-color: powderblue;
+}
+/* hover */
+a:hover{
+    color: slateblue;
+    background-color: tomato;
+}
+/* anchor tag */
+/* before visiting link or page */
+a.cl:link{
+    color: turquoise;
+    background-color: violet;
+}
+/* after visiting link or page */
+a.cl:visited{
+    color: teal;
+    background-color: yellow;
+}
+/* image tag */
+img{
+    opacity: 0.8;
+    border-radius: 10px;
+}
+/* image hover */
+img:hover{
+    opacity: 0.6;
+     border-radius: 30px; 
+}
+/* for box */
+#box{
+    color: black;
+    background-color: blanchedalmond;
+    border: black solid 4px;
+    width: 300px;
+    margin: 30px 40px;
+}

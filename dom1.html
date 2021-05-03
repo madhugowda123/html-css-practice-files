@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Heading with id demo</h1>
+    <div id="mydiv"></div>
+    <section id="mysec"></section>
+    <h2>Unorder list</h2>
+    <ul id="myul"></ul>
+    <h2>Order list</h2>
+    <ol id="myol"></ol>
+    <script>
+     
+
+
+       document.write("JavaScript")
+    document.body.innerHTML="Hello Inner HTML";  //overrides the h1
+    document.body.innerText=" hello inner text"
+    document.body.textContent="text contant";
+    
+
+    document.body.innerHTML="<h1>Hello Inner HTML</h1>";  //overrides the h1
+     document.body.innerText="<h1>hello inner text</h1>"
+     document.body.textContent="<h1>text contant</h1>";
+    
+//-----------CREATE AN ELEMENT------------------
+
+var x = document.createElement('p');
+console.log(x);
+x.innerHTML = "hello for div";
+ x.style.color="red";
+ // document.body.appendChild(x);
+
+var y=document.getElementById("mydiv");
+y.appendChild(x);
+
+
+var h= document.createElement('h1');
+h.innerHTML='HELLO H1';
+h.style.color='red';
+var z=document.getElementById('mysec');
+z.appendChild(h);
+
+var p=document.createElement('p')
+  // console.log(p);
+p.innerHTML ="hello for sec";
+p.style.color="blue";
+z.appendChild(p);
+
+
+var y=document.getElementById("mydiv");
+y.appendChild(x);
+console.log(y);
+
+var m=document.getElementsByTagName('p');
+console.log(m);
+
+
+var n=document.getElementsByClassName('dclass');
+console.log(n);
+console.log(typeof(n));
+
+var q=document.getElementsByName("sample");
+console.log(q);
+var a=document.querySelector(".dclass")
+console.log(a);
+var b=document.querySelectorAll("p");
+console.log(b);
+
+var arr=["JAVA","HTML","JAVASCRIPT","PYTHON"];
+  // for(var i=0; i<arr.length; i++){
+  //  for( var i in arr){
+    for(i of arr){
+  var l=document.createElement('li');
+  l.innerHTML=i;
+  l.style.color='green';
+ var z= document.getElementById("myul");
+ z.appendChild(l);
+  }
+  
+
+  for(i of arr){
+  var j=document.createElement("li")
+  j.innerHTML=i;
+  j.style.color="blue";
+var z=document.getElementById("myol");
+   z.appendChild(j);
+}
+
+ var h=document.createElement("li")
+h.innerHTML=" HTML ";
+h.style.color="pink";
+ z.appendChild(h);
+
+ var s=document.createElement("li")
+s.innerHTML=" JAVASCRIPT ";
+s.style.color="purple";
+ z.appendChild(s);
+
+ var p=document.createElement("li")
+p.innerHTML=" PYTHON ";
+p.style.color="green";
+ z.appendChild(p);
+
+
+ var j=document.createElement("li")
+j.innerHTML=" JAVA ";
+j.style.color="blue";
+ var y=document.getElementById("myol");
+ y.appendChild(j);
+
+ var h=document.createElement("li")
+h.innerHTML=" HTML ";
+h.style.color="pink";
+ y.appendChild(h);
+
+ var s=document.createElement("li")
+s.innerHTML=" JAVASCRIPT ";
+s.style.color="purple";
+ y.appendChild(s);
+
+ var p=document.createElement("li")
+p.innerHTML=" PYTHON ";
+p.style.color="green";
+ y.appendChild(p);
+    </script>
+</body>
+</html>

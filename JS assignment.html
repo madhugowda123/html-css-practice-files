@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>
+      td{
+          background-color: powderblue;
+          color: black;
+      }
+  </style>
+  <script>
+    function addRow(){
+    
+      var fname1 =document.getElementById("fname").value;
+      var age1 =document.getElementById("age").value;
+      var email1 =document.getElementById("email").value;
+
+        var table=document.getElementsByTagName("table")[0];
+
+      var newRow=table.insertRow(1);
+
+      var cell1=newRow.insertCell(0);
+      var cell2=newRow.insertCell(1);
+      var cell3=newRow.insertCell(2);
+
+      cell1.innerHTML=fname1;
+      cell2.innerHTML=age1;
+      cell3.innerHTML=email1;
+    }
+    </script>
+</head>
+<body style="text-align: center;background-color: wheat;">
+    
+    <marquee behavior style="text-align: center; color: blueviolet; font-size: 1cm;">LOGIN FORM
+</marquee>
+  <b>&nbsp;&nbsp;&nbsp;&nbsp;NAME</b>:<input type="text" name="fname" id="fname"/><p></p>
+  <b>AGE</b>:<input type="number" name="age" id="age"/><p></p>
+   <b>&nbsp;&nbsp;&nbsp;&nbsp;EMAIL</b>:<input type="email" name="email" id="email"/><p></p>
+  <button onclick="addRow();" id="button"><b>SUBMIT</b></button><p></p>
+  
+  <table id="table" border="2" style="background-color: pink;color: purple;width: 80%;height: 40%; margin: 2.5cm;">
+    <tr>
+      <th><b>First Name</b></th>
+      <th><b>Age</b></th>
+      <th><b>Email</b></th>
+    </tr>    
+  </table>
+</body>
+</html>

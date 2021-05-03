@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+<body>
+    <script>
+
+     //========================let========
+
+        // let a=10;
+        // console.log(a);
+        // a=12;
+        // console.log(a);
+        // // let a=15;
+        // // console.log(a);
+       
+
+
+        // for(let i=0;i<5;i++){
+        //     console.log(i);
+        // }
+        // console.log(i);
+
+    //   ====================const=========
+
+    // const a= 3;
+    // const b=10;
+    // console.log(b);
+    // // a=5;
+    // // const a=15;
+    // for(let i =0 ;i<5; i++){
+    //     console.log(i);
+    // } 
+    // if (a===3){
+    //     const b=19;
+    //     console.log(b);
+    // }
+    // console.log(b);
+
+    // ======================Destructureing==================
+// array destructure
+    // let arr=[2,3,45,56,10];
+    // let [a,b,c,d,e]=arr;
+    // console.log(a);
+    // console.log(e);
+    let arr=[2,3,45,56,10];
+    let [a,b,,d]=arr;
+    console.log(d);
+    console.log(b);
+// object destrucureing
+
+let personData={
+    name:"Sudha",
+    age:24,
+    rollno:2345,
+    homeTown:"Banglore",
+    country:'India'
+}
+let{name,age,rollno,homeTown,country: homeCountry}=personData;
+console.log(name);
+console.log(homeCountry);
+
+//Spread and Rest Operator
+//spread 
+function sum(a,b) {
+    return a + b;
+}
+console.log(sum(2,3));
+arr=[2,3];
+console.log(sum(arr));  // it not work
+console.log(sum(...arr));
+
+//rest operator
+
+function myFunction(...arr) {
+    let sum=0;
+    for(let i of arr){
+        sum+=i
+    }
+    return sum;
+}
+console.log(myFunction(2,3,4,5,6));
+
+
+function myFunction1(a,b,...arr) {
+    let c= a*b;
+    let sum  = 0;
+    for(let i of arr){
+        sum +=i
+    }
+    return c + sum;
+}
+console.log(myFunction1(2,3,4,5,6,7,8));
+
+    </script>
+</body>
+</html>

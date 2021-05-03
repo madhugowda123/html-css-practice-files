@@ -1,0 +1,28 @@
+/* --element selectors-- */
+body{
+    margin: 3cm;
+    background-image: url();
+}
+p
+{
+    color: red;
+    background-color: wheat;
+}
+
+h1{
+    color: red;
+}
+/* class selectors */
+.myClass{
+    color: purple;
+}
+/* id selector */
+#myID{
+    color: blue;
+    background-color: powderblue;
+}
+/* hover */
+a:hover{
+    color: red;
+    background-color: wheat;
+}

@@ -1,0 +1,28 @@
+body {
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.main-item1 {
+  width: 35%;
+}
+
+.main-item2 {
+  width: 65%;
+}
+
+#buid {
+  margin: 0.5cm;
+}
+
+#butid {
+  margin: 0.5cm;
+  width: 5cm;
+}
+#buid1 {
+  float: right;
+}

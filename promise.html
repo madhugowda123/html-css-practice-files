@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <script>
+        //===================Promise=========================
+
+        // let myPromise= new Promise((resolve,reject)=>{
+        //     let condition=true;
+        //     if(condition===true){
+        //         resolve("this is resolved")
+        //     }else{
+        //         reject("there is an error")
+        //     }
+        // })
+        // myPromise.then((resp)=>{ //calling function
+        //                               //whatever is return by resolve is called resp
+        // console.log("I am inside then " +resp);                       
+        //  }) 
+         
+        //  .catch((err)=>{
+        //      console.log(" This is catch:" +err);
+        //  })
+         
+        //=====================================async and await=================
+        
+        // async function myFunction(){
+        //     console.log("first line of myFunction before fetch");
+        //     let data= await fetch("https://api.github.com/users");
+        //     console.log("this line is after fetch and before json");
+        //     console.log(data);
+        //     let myData = await data.json();
+        //     console.log(" end of myFunction");
+        //     return myData;
+        // }
+        // console.log("start of the code before calling a function");
+        // d = myFunction();
+        // console.log("after calling the myFunction");
+        // d.then((resp)=>{
+        //     console.log(resp);
+        //     console.log(resp[0]); 
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+        // console.log("end of the code");
+
+        //=============================default parameter=============================
+        function sum(a,b){
+            let c=a+b;
+            console.log(c);
+        }
+        sum(2,6)
+
+        function sum(a=3,b=4){
+            let c=a+b;
+            console.log(c);
+        }
+        sum()
+        sum(2,6)
+
+class Car{
+    constructor(name){
+        this.name=name
+    }
+    getName(){
+        return this.name;
+    }
+    setName(newName){
+        this.name=newName;
+    }
+     number=100;
+    static num=200;
+}
+
+let myObj=new Car("Honda");
+console.log(myObj);
+console.log(myObj.getName());
+myObj.setName("Toyota");
+console.log(myObj.getName());
+console.log(myObj.number);
+console.log(Car.num);
+class  newCar extends Car{
+    constructor(name, brand){
+        super(name);
+        this.brand=brand;
+    }
+    getBrand()
+{
+    return this.brand;
+}
+}
+let newBrand = newCar("Toyota","Etios");
+
+         </script>
+
+</body>
+</html>
